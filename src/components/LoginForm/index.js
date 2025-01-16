@@ -5,7 +5,7 @@ class LoginForm extends Component {
   state = {
     username: '',
     password: '',
-    errorMessage: '', // To display validation error messages
+    errorMessage: '',
   }
 
   onChangeUsername = event => {
@@ -18,7 +18,7 @@ class LoginForm extends Component {
 
   onSubmitSuccess = () => {
     const {history} = this.props
-    history.replace('/') // Navigate to Home
+    history.replace('/')
   }
 
   submitForm = async event => {
